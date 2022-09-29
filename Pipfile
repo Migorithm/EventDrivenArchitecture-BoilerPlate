@@ -1,0 +1,45 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+sqlalchemy = {extras = ["asyncio"], version = "*"}
+aiosqlite = "*"
+asyncpg = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+greenlet = "*"
+httpx = "~=0.23.0"
+fastapi_utils = "==0.2.1"
+aioboto3 = {extras = ["boto3"], version = "~=9.6.0"}
+boto3-type-annotations-with-docs = "~=0.3.1"
+prometheus-fastapi-instrumentator = "==5.8.2"
+celery = {extras = ["sqs, redis"], version = "5.2.7"}
+types-redis = "*"
+alembic = "==1.7.4"
+harmony-core = {file = "https://harmony-static-dev.travelflan.com/pypi/harmony-core-0.5.6.tar.gz"}
+tenacity = "==8.0.1"
+passlib = {extras = ["bcrypt"], version = "~=1.7.4"}
+python-jose = {extras = ["cryptography"], version = "3.3.0"}
+python-multipart = "==0.0.5"
+pydantic = {extras = ["email"], version = "*"}
+
+[dev-packages]
+pytest = "*"
+flake8 = "*"
+isort = "*"
+black = "*"
+mypy = "*"
+Faker = "*"
+autoflake = "*"
+pytest-asyncio = "~=0.19"
+pytest-cov = "*"
+pytest-env = "*"
+debugpy = "*"
+factory-boy = "*"
+requests = "~=2.28"
+types-python-dateutil = "*"
+
+[requires]
+python_version = "3.10"
